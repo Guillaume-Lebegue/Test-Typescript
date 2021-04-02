@@ -3,7 +3,7 @@ import CounterContext from '../contexts/CounterContext'
 import ShowCounter from './ShowCounter'
 import IncreaseCounter from './IncreaseCounter'
 
-export default function Counter () {
+export default function Counter() {
   const { count, setCount } = useContext(CounterContext)
 
   const handleIncrease = () => {
@@ -12,8 +12,8 @@ export default function Counter () {
 
   return (
     <div>
-      <ShowCounter counter={count} />
-      <IncreaseCounter onIncrease={handleIncrease} />
+      <ShowCounter counter={count}/>
+      <IncreaseCounter onIncrease={handleIncrease}/>
     </div>
   )
 }
