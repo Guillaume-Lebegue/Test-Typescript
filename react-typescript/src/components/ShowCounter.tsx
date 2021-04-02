@@ -1,11 +1,7 @@
 type Props = {
-  counter: number
-}
+  counter: number;
+};
 
-export default function ShowCounter ({ counter }: Props) {
-  return (
-    <div>
-      Counter is {counter}
-    </div>
-  )
+export default function ShowCounter({ counter }: Props): JSX.Element {
+  return <div>Counter is {counter}</div>;
 }

@@ -1,15 +1,11 @@
-import React from 'react'
-
 type Props = {
-  onIncrease: () => void
-}
+  onIncrease: () => void;
+};
 
-export default function IncreaseCounter({ onIncrease }: Props) {
+export default function IncreaseCounter({ onIncrease }: Props): JSX.Element {
   const handleClick = () => {
-    onIncrease()
-  }
+    onIncrease();
+  };
 
-  return (
-    <button onClick={handleClick}>Add</button>
-  )
+  return <button onClick={handleClick}>Add</button>;
 }

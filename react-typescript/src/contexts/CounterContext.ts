@@ -1,8 +1,15 @@
-import React from 'react'
+import React from 'react';
 
-const CounterContext = React.createContext({
+export interface CounterContextData {
+  count: number;
+  setCount: (_: number) => void;
+}
+
+const counterContextDefault: CounterContextData = {
   count: 0,
-  setCount: (_newCount: number) => {}
-})
+  setCount: () => null,
+};
 
-export default CounterContext
+const CounterContext = React.createContext<CounterContextData>(counterContextDefault);
+
+export default CounterContext;
